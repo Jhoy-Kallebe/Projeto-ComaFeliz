@@ -1,0 +1,668 @@
+body {
+	background-color: #ECF0F1;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+	padding: 0;
+	margin: 0;
+}
+
+header {
+    display: flex;
+	background-color: #ffffff;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, .05);
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+    padding: 0 80px;
+}
+
+.img-header {
+	height: 65px;
+	margin: 0 10px;
+}
+
+#principal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: calc(100vh - 80px);
+}
+
+#centraliza {
+	display: flex;
+}
+
+.container {
+	height: 400px;
+	text-align: center;
+	box-shadow: 10px 0 15px rgba(0, 0, 0, .08);
+}
+
+/* - - - - - RODAPÉ - - - - - */
+
+footer {
+    padding: 5px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    border-top: solid 1px black;
+}
+
+footer > p > a{
+    color: black;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    text-decoration: underline;
+}
+
+/*-------------------------- descrição ------------------------------*/
+
+#descricao {
+	background-color: #2F9E40;
+	border-radius: 30px 0 0 30px;
+	width: 280px;
+}
+
+#descricao h3 {
+	font-size: 28px;
+	margin-top: 70px;
+}
+
+#descricao p {
+	text-align: left;
+	margin: 0 20px;
+	font-size: 15px;
+	padding: 0 30px;
+	margin-bottom: 100px;
+}
+
+#descricao a {
+	color: white;
+	font-size: 12px;
+	padding: 30px;
+}
+
+/*-------------------------- formulario ------------------------------*/
+
+#formulario {
+	width: 400px;
+	background-color: #ffffff;
+	border-radius: 0 30px 30px 0;
+	display: flex;
+	align-items: center;
+}
+
+.form {
+	width: 300px;   
+    text-align: center;
+    background: white;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.entradas {
+    padding: 20px 0;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.entradas input {
+    height: 30px;
+    padding: 0 5px;	
+    border: none;
+    border-bottom: 1px solid #7f8c8d;
+    transition: .3s;
+}
+
+.entradas input:focus {
+    border-style: none  ;
+    height: 30px;
+    padding: 0 5px;
+    border: none;
+    border-bottom: 1px solid #27ae60;
+    outline: none;
+}
+
+.entradas .email {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entradas .pass {
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email {
+    margin: 15px 0;
+}
+
+.entradas ion-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #7f8c8d;
+}
+
+.btn input {
+	font-size: 15px;
+    padding: 9px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #2f9e40;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.btn .button:hover {
+    padding: 9px 30px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background: #2ecc71;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+hr {
+    color: #ffffff;
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.desc .fonte {
+    font-weight: 500;
+}
+
+.desc h6  {
+	font-size: 12px;
+    color: #2f9e40;
+}
+
+.desc h6 a {
+	font-size: 12px;
+    color: #ca3120;
+    text-decoration: none;
+}
+
+.desc h6 a:hover {
+    text-decoration: underline;
+}
+
+
+
+/*------------------------------ Tela inicial --------------------------------*/
+
+/* - - - - - CORPO DO SITE - - - - - */
+
+#principal2 {
+    min-height: calc(100vh - 158px);
+    margin: 0 auto;
+    background-color: white;
+    width: 70%;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, .1);
+    padding: 0;
+}
+
+/* - - - -  DATA-HORA  - - - - */
+
+.data-agendamento {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    border-bottom: solid 1px #636e72;
+    background-color: #2F9E40;
+    font-size: 0.8em;
+}
+
+.data-agendamento > p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0 0 0 10px;
+    color: white;
+}
+.botao {
+    text-decoration: none;
+    background-color: #cc3726;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: white;
+    margin-right: 10px;
+    border: none;
+    transition: .3s;
+}
+
+.botao ion-icon {
+    vertical-align: middle;
+    margin: 0 10px 0 0;
+    font-size: 15px;
+}
+
+
+/*  - - - - - AGENDAMENTOS - - - - - */
+
+.agendamentos-feitos {
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+}
+.agendamentos-feitos > h3{
+    font-size: 20px;
+    text-align: center;
+    color: #636e72;
+    font-weight: inherit;
+}
+
+/* - - - - - TABELA - - - - - */
+
+table {
+    margin: 30px auto;
+    background-color: rgb(110, 110, 110);
+    width: 70%;
+    font-size: 14px;
+    color: black;
+}
+
+th {
+    background-color: lightgray;
+    font-weight: normal;
+    padding: 10px;
+}
+td {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+
+/*---------------------------- Tela de solicitação ---------------------------*/
+
+.formularioAgendamento {
+    display: flex;
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+    padding-top: 60PX;
+    border: 1px;
+
+}
+
+.formularioAgendamento .soli {
+    width: 60%;
+    margin: 15px;
+    height: 3.5vh;
+    font-size: 14px;
+}
+
+.formularioAgendamento .soli input {
+    padding-right: 20px;
+}
+
+.formularioAgendamento .txtarea {
+    width: 60%;
+    height: 30vh;
+    margin: 15px 0 30px 0;
+}
+
+
+
+
+
+/*----------------------------- ADMINISTRAÇÃO ------------------------------*/
+
+/*------------------------------- Solicitação Adm --------------------------------*/
+
+.solicitacao {
+    margin-top: 50px;
+}
+
+.solicitacao .contspace {
+    
+    border-bottom: 1px solid #b2bec3;
+}
+
+.solicitacao .contspace .uniao {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.solicitacao .contspace .uniao .container1 {
+        display: flex;
+        justify-content: center;
+}
+
+.solicitacao .contspace .uniao .container1 .imagem_usuario ion-icon {
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    border-radius: 50%;
+    color: #7f8c8d;
+    background-color: #bdc3c7;
+    margin-top: 5px;
+}
+
+.solicitacao .contspace .uniao .identificacao {
+    margin-left: 20px;
+}
+
+.solicitacao .contspace .uniao .identificacao .centralizar {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%); 
+}
+
+.solicitacao .uniao .identificacao #nome h4{
+    font-size: 15px;
+}
+.solicitacao .uniao .identificacao #matricula h4{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.solicitacao .uniao .identificacao h4 {
+    color: #2d3436;
+    margin: 0;
+    padding: 0;
+}
+
+.solicitacao .uniao .buttons {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.solicitacao .uniao .buttons button {
+   width: 45px;
+   height: 45px;
+   border: none;
+   margin: 3px;
+   cursor: pointer;
+}
+
+.solicitacao .uniao .buttons #no{
+    background-color: #cc3726;
+    transition: .2s;
+}
+
+.solicitacao .uniao .buttons #no:hover{
+    background-color: #d95344;
+}
+
+.solicitacao .uniao .buttons #yes{
+    background-color: #2F9E40;
+    transition: .2s;
+}
+
+.solicitacao .uniao .buttons #yes:hover{
+    background-color: #519D5C;
+}
+
+.solicitacao .uniao .buttons ion-icon{
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+.solicitacao .contspace #justificativa{
+    color: black;
+    font-size: 14px;
+    padding: 0 120px 30px 120px;
+}
+
+/*----------------------------- Lista de Alunos ------------------------------*/
+
+#principal2 .data-hora .btn_nav {
+    display: flex;
+}
+
+#principal2 .alunos {
+    color: black;
+    padding-bottom: 30px;
+}
+
+#principal2 .alunos .data {
+    text-align: center;
+    border-bottom: 1px solid #b2bec3;
+    margin: 20px;
+}
+
+#principal2 .alunos .data h4 {
+    font-weight: normal;
+}
+
+#principal2 .alunos .nomes {
+    text-align: left;
+    margin: 50px 100px;
+}
+
+#principal2 .alunos .nomes h5 {
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+/* - - - - - - - - - - - - - Media Query - - - - - - - - - - - - - - - */
+
+@media only screen and (max-width:320px ) {
+
+    /* - - - - header - - - - -  */
+    .imagem {
+        margin: 0px;
+    }
+
+    /* - - - - corpo (TelaInicial/solicitação) - - - - */
+
+    #principal2 {
+        width: 100%;
+    }
+
+    /* - - - - - - INDEX (Tela de Login) - - - - - - */
+    
+    #principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #centraliza {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    
+    .container {
+        height: 400px;
+
+    }
+    #descricao {
+        border-radius: 0;
+        width: 100%;
+    }
+    #formulario {
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+    /* - - - - TelaInicial - - -  - */
+    .data-agendamento > p {
+        font-size: 10px;
+        margin: 0px;
+    }
+    .botao {
+        padding: 5px 4px;
+        border-radius: 10px;
+        font-size: 10px;
+        margin: 0px;
+    }
+    
+    .botao ion-icon {
+        font-size: 10px;
+    }
+    table {
+        width: 100%;
+    }
+    /*-------------------------- Solicitação Adm ------------------------------*/
+
+
+    .solicitacao .uniao {
+    padding: 10px;
+}
+    .solicitacao #justificativa{
+        text-align: justify;
+        padding: 0 20px;
+    }
+
+/*--------------------------- Lista de Alunos -----------------------------*/
+    #principal2 .alunos .nomes {
+        text-align: left;
+        margin: 50px 10px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    
+    /* - - - - - - header - - - - - - */
+    .imagem {
+        height: 60px;
+        margin: 0px;
+    }
+
+    /* - - - - - - INDEX (Tela de Login) - - - - - - */
+    #principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #centraliza {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    
+    .container {
+        height: 400px;
+
+    }
+    #descricao {
+        border-radius: 0;
+        width: 100%;
+    }
+    #formulario {
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+    /* - - - - corpo (TelaInicial/solicitação) - - - - */
+
+    #principal2 {
+        width: 100%;
+    }
+
+    /* - - - - - telaInicial - - - - - */
+    .data-agendamento > p {
+        margin-left: 0px;
+        font-size: 11px;
+    }
+    .botao {
+        margin-right: 0px;
+        font-size: 11px;
+    }
+    .botao ion-icon {
+        margin: 0 10px 0 0;
+        font-size: 11px;
+    }
+    table {
+        width: 90%;
+    }
+
+}
+
+/*-------------------------- Solicitação Adm ------------------------------*/
+
+
+.solicitacao .uniao {
+    padding: 10px;
+}
+.solicitacao #justificativa{
+    text-align: justify;
+    padding: 0 20px;
+}
+
+/*--------------------------- Lista de Alunos -----------------------------*/
+#principal2 .alunos .nomes {
+    text-align: left;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+
+     /* - - - - - - INDEX (Tela de Login) - - - - - - */
+     #principal {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    #centraliza {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    
+    .container {
+        height: 400px;
+
+    }
+    #descricao {
+        border-radius: 0;
+        width: 100%;
+    }
+    #formulario {
+        width: 100%;
+        border-radius: 0;
+    }
+
+
+    /* - - - - corpo (TelaInicial/solicitação) - - - - */
+    #principal2 {
+        width: 100%;
+    }
+    /* - - - - - telaInicial - - - - - */
+
+    .data-hora > p {
+        margin-left: 10px;
+    }
+    .botao {
+        margin-right: 10px;
+    }
+
+/*-------------------------- Solicitação Adm ------------------------------*/
+
+    .solicitacao .uniao {
+        padding: 10px;
+    }
+    .solicitacao #justificativa{
+        text-align: justify;
+        padding: 10px 30px;
+    }
+    
+/*--------------------------- Lista de Alunos -----------------------------*/
+    #principal2 .alunos .nomes {
+        text-align: left;
+        margin: 50px 20px;
+    }
+    
+}
